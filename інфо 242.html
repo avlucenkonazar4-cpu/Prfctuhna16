@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профіль Користувача</title>
+    
+    <style>
+        /* 2. Для тегу body: висота 100vh, центрування, шрифт Arial, фон #F0F0F0. */
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #F0F0F0;
+        }
+
+        /* 3. Для контейнера .profile-card: центрування у стовпець, фон білий, ширина 300px, заокруглення 10px, тінь. /
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            background-color: white;
+            color: #333333; / Колір тексту змінено для читабельності /
+            padding: 30px 20px; 
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); / Тінь */
+            text-align: center;
+        }
+
+        /* 4. Для зображення .profile-image: 100x100px, 50% заокруглення, margin-top 20px, object-fit: cover. /
+        .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; 
+            margin-top: 20px;
+            margin-bottom: 20px; 
+            object-fit: cover;
+            / Додано відступи для рамки, якщо вона потрібна */
+            border: 2px solid #ddd; 
+        }
+
+        /* 5. Для контейнера .profile-info: центрування по центру у стовпець. */
+        .profile-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+        }
+
+        /* 6. Для заголовка .profile-name: обнулити margin, розмір 28px, колір #333333. */
+        .profile-name {
+            margin: 0;
+            font-size: 28px;
+            color: #333333;
+        }
+
+        /* 7. Для абзацу .profile-description: розмір 14px, колір #777777, margin 10px 0. /
+        .profile-description {
+            font-size: 14px;
+            color: #777777;
+            margin: 10px 0; / 10px зверху/знизу, 0 зліва/справа */
+        }
+
+        /* 8. Для блоку .social-links: display:flex, margin-top 20px. */
+        .social-links {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        /* 9. Для елементів .social-link: колір #007bbf, прибрати декорації, padding 0 10px. */
+        .social-link {
+            color: #007bbf;
+            text-decoration: none;
+            padding: 0 10px; 
+            font-size: 14px;
+            font-weight: bold;
+            transition: text-decoration 0.3s;
+        }
+
+        /* 9. При наведенні: текстова декорація «підкреслення». */
+        .social-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-card">
+        <img src="https://i.pinimg.com/736x/76/16/ee/7616ee1cf8caefdb492908d8e75b490e.jpg" alt="Фото профілю" class="profile-image">
+        
+        <div class="profile-info">
+            <h2 class="profile-name">Ім'я Користувача</h2>
+            <p class="profile-description">Короткий опис профілю користувача. Тут може бути інформація про захоплення, професію тощо.</p>
+            
+            <div class="social-links">
+                <a class="social-link" href="#">Facebook</a>
+                <a class="social-link" href="#">Twitter</a>
+                <a class="social-link" href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

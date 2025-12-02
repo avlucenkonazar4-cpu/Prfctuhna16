@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Навігаційна Панель</title>
+    <style>
+        /* 2. Стилі для body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4; 
+        }
+
+        /* 3. Стилі для .nav */
+        .nav {
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            width: 90%; 
+            max-width: 1200px;
+            background-color: #333333;
+            color: white;
+            padding: 20px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        /* 4. Стилі для .nav-links-item /
+        .nav-links-item {
+            text-decoration: none; 
+            color: white; 
+            padding: 10px 15px; / 10px зверху/знизу, 15px справа/зліва */
+            transition: background-color 0.3s, border-radius 0.3s;
+            margin-left: 5px;
+        }
+
+        /* 5. Стилі при наведенні :hover */
+        .nav-links-item:hover {
+            background-color: #575757; 
+            border-radius: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">Логотип</div>
+        <div class="nav-links">
+            <a class="nav-links-item" href="#">Головна</a>
+            <a class="nav-links-item" href="#">Про нас</a>
+            <a class="nav-links-item" href="#">Послуги</a>
+            <a class="nav-links-item" href="#">Контакти</a>
+        </div>
+    </nav>
+</body>
+</html>
